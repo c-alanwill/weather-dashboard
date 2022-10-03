@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Description" content="Enter your description here" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+	crossorigin="anonymous">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+	<header class="container-fluid bg-custom">
+		<nav class="navbar navbar-light bg-custom">
+			<a class="navbar-brand" href="#">
+				<img src="./images/weather-icon.png" width="30" height="30" class="d-inline-block align-top my-color" alt="">
+				Weather Dashboard
+			</a>
+		</header>
+		<br>
+		<main class="container-fluid">
+			<div class="row px-3">
+				<div class="col-12 col-md-4 p-0 pr-md-2">
+					<div class="form-group">
+						<label for="search">Search for a City</label>
+						<input type="text" id="city-name" class="form-control" placeholder="Type City Name">
+					</div>
+				</div>
+				<div class="col-12 col-md-8 p-0 pl-md-2">
+					<div class="form-group">
+					</div>
+				</div>
+			</div>
+			<div class="row px-3">
+				<div class="col-12 col-md-4 p-0 pr-md-2">
+					<div class="form-group">
+						<button type="button" id="submit-button" class="btn btn-success btn-md btn-block">Submit</button>
+						<button type="button" id="los-angeles-button" class="btn btn-secondary btn-md btn-block">Los Angeles</button>
+						<button type="button" id="chicago-button" class="btn btn-secondary btn-md btn-block">Chicago</button>
+						<button type="button" id="atlanta-button" class="btn btn-secondary btn-md btn-block">Atlanta</button>
+						<button type="button" id="new-york-button" class="btn btn-secondary btn-md btn-block">New York</button>
+						<button type="button" id="seattle-button" class="btn btn-secondary btn-md btn-block">Seattle</button>
+						<button type="button" id="denver-button" class="btn btn-secondary btn-md btn-block">Denver</button>
+						<button type="button" id="dallas-button" class="btn btn-secondary btn-md btn-block">Dallas</button>
+						<button type="button" id="san-francisco-button" class="btn btn-secondary btn-md btn-block">San Francisco</button>
+						<button type="button" id="london-button" class="btn btn-secondary btn-md btn-block">London</button>
+					</div>
+				</div>
+				<div class="col-12 col-md-8 p-0 pl-md-2">
+					<div class="form-group">
+						
+						<div class="form-control border-dark bottom-field" id="selected-city" rows="9" disabled>
+							<h4 id="city-header"><img src="http://openweathermap.org/img/wn/10d@2x.png" width="25" height="25" alt=""></h4>
+							<p id="temp"></p>
+							<p id="wind">Wind 9.53 MPH</p>
+							<p ide="humidity">Humidity 65 %</p>
+						</div>
+					</div>
+							<!-- <div class="form-group"> -->
+								<label id="five-day-forecast">5-Day Forecast</label>
+								<div style="height: 179px;">
+									<div class="h-100 d-inline-block" id="days" style="width: 130px; margin-right: 10px; margin-bottom: 14px;">
+										<h6>Atlanta (10/5/22) <img src="http://openweathermap.org/img/wn/10d@2x.png" width="30" height="30" alt=""></h6>
+										<div>
+											<p id="temp-five-day">Temp 73F</p>
+											<p id="wind-five-day">Wind 9.53 MPH</p>
+											<p id="humidity-five-day">Humidity 65 %</p>
+										</div>
+							
+						</div>
+									</div>
+									<div class="h-100 d-inline-block"></div>
+									<div class="h-100 d-inline-block" id="days" style="width: 120px; margin-right: 10px; margin-bottom: 14px;"></div>
+									<div class="h-100 d-inline-block" id="days" style="width: 120px; margin-right: 10px; margin-bottom: 14px;"></div>
+									<div class="h-100 d-inline-block" id="days" style="width: 120px; margin-right: 10px; margin-bottom: 14px;"></div>
+								</div>
+							<!-- </div>  -->
+					</div>
+				</div>
+			</div>
+
+		</main>
+			
+		</nav>
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+
+	
+</body>
+</html>

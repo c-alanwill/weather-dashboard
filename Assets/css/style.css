@@ -1,0 +1,43 @@
+.bg-custom {
+    background-color: #d5d5d8;
+    margin-bottom: -20px;
+}
+
+#selected-city {
+    height: 222px;
+}
+
+#day-one {
+    height: 222px;
+}
+
+#five-day-forecast {
+    font-weight: bold;
+    font-size: 18px;
+}
+#days {
+    background-color: #3a749e;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: -14px;
+    margin-left: 8px;
+}   
+
+h6 {
+    margin-top: 7px;
+    margin-left: 7px;
+}
+p {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#five-day-stats {
+    margin-top: 5px;
+    margin-bottom:
+}
+
+
