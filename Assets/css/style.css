@@ -36,21 +36,17 @@ h4 {
 	/* Media Queries */
 @media only screen and (max-width: 496px) {
 .blue-card {
-	min-width: 496px;
-	
+	max-width: 496px;
+	/* flex-direction: wrap;
+	flex-wrap: wrap; */
 }
 }
 
 @media only screen and (max-width: 496px) {
 #selected-city {
-	height: 260px;
-		
+height: 280px;
+}
+h4 {
+	margin-top: 5px;
 }
 }
-
-/* @media only screen and (max-width: 400px) {
-	#selected-city {
-		height: 360px;
-	}
-	}
- */
