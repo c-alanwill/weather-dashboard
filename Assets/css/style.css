@@ -33,3 +33,24 @@ h4 {
 }
 
 
+	/* Media Queries */
+@media only screen and (max-width: 496px) {
+.blue-card {
+	min-width: 496px;
+	
+}
+}
+
+@media only screen and (max-width: 496px) {
+#selected-city {
+	height: 260px;
+		
+}
+}
+
+/* @media only screen and (max-width: 400px) {
+	#selected-city {
+		height: 360px;
+	}
+	}
+ */
