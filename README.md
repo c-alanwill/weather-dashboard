@@ -1,100 +1,45 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard
 
-## Your Task
+## Description
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+* The repository shows an application for a weather dashboard where the user can search for a city and display the current weather in addition to a five day forecast of weather for that city.  This app runs in the browser and features dynamically updated HTML and CSS powered by JQuery.  It has a responsive user interface to be laid out properly on various size screens.
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+* The user types a city in the search field and upon selecting the "submit" button, the city's current weather shows in a text area to the right.  Below that text area, are 5 cards.  The first card shows the forecast for the next day.  Then the next four cards show the forecast for the next four days after that.  For the selected city, the card lists the city name, the date, and the futre forecast for the temperature in farenheit, wind speed in MPH, and the humidity.
 
-## User Story
+* In addition to searching for a city, there are favorite cities listed under the search field.  When a user selects a favorite city, the current forecast and the five day forecast will be shown for that city, the same as if the user searched for the city.
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+* The application uses local storage to store persistent data.
 
-## Acceptance Criteria
+* The HTML code contains a logical structure for the elements within the page.  There are sections within the body for each section on the page.
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+* The project uses Bootstrap with a link shown on the head section of the HTML.  There is also linked CSS stylesheet in the head section of the HTML. 
 
-## Mock-Up
+* Also, the project uses JQuery and Moments.js with links under the script tag on the HTML page.  There is a linked Javascipt file as well under the script tag.
 
-The following image shows the web application's appearance and functionality:
+* The application makes requests and retrieves data from the third party API, openweathermap.org, to show the resulting weather details. 
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
 
-## Grading Requirements
+* Notes have been applied to the HTML code, CSS and JavaScript code to identify each section of code. 
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+## Installation
 
-### Technical Acceptance Criteria: 40%
+* The project is currently running on Github server.  It can be viewed at: JLL:JL:KJLKJLK:LKLJ:LJ:LJL:K:JKLJL:J
 
-* Satisfies all of the above acceptance criteria plus the following:
+The code for this project can be found on GitHub at: https://github.com/c-alanwill/weather-dashboard
 
-    * Uses the OpenWeather API to retrieve weather data.
+There is an index.html file to view the application.  
 
-    * Uses `localStorage` to store persistent data.
+## Usage
 
-### Deployment: 32%
+The following image demonstrates the web application's appearance and functionality:
 
-* Application deployed at live URL.
+![Daily Calendar](./Assets/daily-calendar.png)
 
-* Application loads with no errors.
+## Credits
 
-* Application GitHub URL submitted.
+N/A
 
-* GitHub repository that contains application code.
+## License
 
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+Please refer to the license in the repo.

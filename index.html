@@ -14,14 +14,17 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+	<!-- Header -->
 	<header class="container-fluid bg-custom">
 		<nav class="navbar navbar-light bg-custom">
 			<a class="navbar-brand" href="#">
 				<img src="./images/weather-icon.png" width="30" height="30" class="d-inline-block align-top my-color" alt="">
 				Weather Dashboard
 			</a>
+		</nav>
 		</header>
 		<br>
+		<!-- Search for a City -->
 		<main class="container-fluid">
 			<div class="row px-3">
 				<div class="col-12 col-md-4 p-0 pr-md-2">
@@ -35,21 +38,16 @@
 					</div>
 				</div>
 			</div>
+			<!-- Buttons -->
 			<div class="row px-3">
 				<div class="col-12 col-md-4 p-0 pr-md-2">
 					<div class="form-group">
-						<button type="button" id="submit-button" class="btn btn-success btn-md btn-block">Submit</button>
-						<button type="button" id="los-angeles-button" class="btn btn-secondary btn-md btn-block">Los Angeles</button>
-						<button type="button" id="chicago-button" class="btn btn-secondary btn-md btn-block">Chicago</button>
-						<button type="button" id="atlanta-button" class="btn btn-secondary btn-md btn-block">Atlanta</button>
-						<button type="button" id="new-york-button" class="btn btn-secondary btn-md btn-block">New York</button>
-						<button type="button" id="seattle-button" class="btn btn-secondary btn-md btn-block">Seattle</button>
-						<button type="button" id="denver-button" class="btn btn-secondary btn-md btn-block">Denver</button>
-						<button type="button" id="dallas-button" class="btn btn-secondary btn-md btn-block">Dallas</button>
-						<button type="button" id="san-francisco-button" class="btn btn-secondary btn-md btn-block">San Francisco</button>
-						<button type="button" id="london-button" class="btn btn-secondary btn-md btn-block">London</button>
+						<button type="button" id="submit-button" class="btn btn-success btn-md btn-block mb-2">Submit</button>
+						<div id="city-button">
+						</div>
 					</div>
 				</div>
+				<!-- Chosen City -->
 				<div class="col-12 col-md-8 p-0 pl-md-2">
 					<div class="form-group">
 						<div class="form-control border-dark bottom-field" id="selected-city" rows="9" disabled>
@@ -59,36 +57,21 @@
 							<p id="humidity"></p>
 						</div>
 					</div>
-							<!-- <div class="form-group"> -->
-								<label id="five-day-forecast">5-Day Forecast</label>
-								<div class="row">
-										<div class="h-100 d-inline-block" id="days">
-												<!-- <h6 class="day-one"><img src="http://openweathermap.org/img/wn/10d@2x.png" width="45" height="45" alt=""></h6>
-												<div id="five-day-stats"> -->
-													<!-- <p id="five-day-temp">Temp 73F</p>
-													<p>Wind 9.53 MPH</p>
-													<p>Humidity 65 %</p> -->
-										</div>
+					<!-- Five Day Forecast Cards -->
+						<label id="five-day-forecast">5-Day Forecast</label>
+						<div class="row">
+								<div class="h-100 d-inline-block" id="days">
 								</div>
-									
-									<!-- <div class="h-100 d-inline-block"></div>
-									<div class="h-100 d-inline-block" id="days" style="width: 120px; margin-right: 10px; margin-bottom: 14px;"></div>
-									<div class="h-100 d-inline-block" id="days" style="width: 120px; margin-right: 10px; margin-bottom: 14px;"></div>
-									<div class="h-100 d-inline-block" id="days" style="width: 120px; margin-right: 10px; margin-bottom: 14px;"></div>
-								</div> -->
-							<!-- </div>  -->
+						</div>
 					</div>
 				</div>
 			</div>
-
 		</main>
-			
-		</nav>
+	
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	
 </body>
 </html>
