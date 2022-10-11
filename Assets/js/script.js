@@ -9,6 +9,27 @@ var daysEl = document.getElementById('days');
 var favoriteCity = []
 var cityButtonEl = document.getElementById('city-button');
 
+/* Buttons */ 
+function displayFavoriteCity (){
+  if (localStorage.getItem("favorite-city")){
+    favoriteCity = JSON.parse(localStorage.getItem("favorite-city"))
+  }
+  cityButtonEl.textContent = ""
+  for (var i = 0; i < favoriteCity.length; i++){
+    var button = document.createElement("button")
+    button.classList = "btn btn-secondary btn-md btn-block cityRef" 
+    button.textContent = favoriteCity[i]
+    cityButtonEl.appendChild(button)
+  }
+  var cityRefEl = document.querySelectorAll(".cityRef")
+  for (var i = 0; i < cityRefEl.length; i++){
+    cityRefEl[i].addEventListener("click", function(){
+    var cityName = this.textContent
+    getApi(cityName) 
+    })
+  }
+}
+displayFavoriteCity()
 
 /* Chosen City */
 function getApi(cityName) {
@@ -32,28 +53,6 @@ function getApi(cityName) {
         getForecast(cityName);
       })
   }    
-
-  /* Buttons */ 
-  function displayFavoriteCity (){
-    if (localStorage.getItem("favorite-city")){
-      favoriteCity = JSON.parse(localStorage.getItem("favorite-city"))
-    }
-    cityButtonEl.textContent = ""
-    for (var i = 0; i < favoriteCity.length; i++){
-      var button = document.createElement("button")
-      button.classList = "btn btn-secondary btn-md btn-block cityRef" 
-      button.textContent = favoriteCity[i]
-      cityButtonEl.appendChild(button)
-    }
-    var cityRefEl = document.querySelectorAll(".cityRef")
-    for (var i = 0; i < cityRefEl.length; i++){
-      cityRefEl[i].addEventListener("click", function(){
-      var cityName = this.textContent
-      getApi(cityName) 
-      })
-    }
-  }
-  displayFavoriteCity()
 
 /* Five Day Forecast Cards */  
 function getForecast (cityName) {
