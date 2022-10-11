@@ -40,8 +40,6 @@ h4 {
 @media only screen and (max-width: 496px) {
 .blue-card {
 	max-width: 496px;
-	/* flex-direction: wrap;
-	flex-wrap: wrap; */
 }
 }
 
